@@ -1,0 +1,108 @@
+body {
+  margin: 0;
+  background: linear-gradient(#1c7ed6, #003c8f);
+  font-family: Arial, sans-serif;
+  overflow: hidden;
+}
+
+#topbar {
+  padding: 15px;
+  text-align: center;
+}
+
+#search {
+  width: 300px;
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+  font-size: 16px;
+}
+
+#scroll {
+  height: calc(100vh - 70px);
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+
+#row {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 40px;
+  gap: 30px;
+}
+
+.app {
+  width: 160px;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.bubble {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 20px rgba(255,255,255,0.5);
+  transition: transform .2s;
+}
+
+.bubble:hover {
+  transform: scale(1.15);
+}
+
+.bubble img {
+  width: 135px;
+  height: 135px;
+  border-radius: 14px;
+  object-fit: cover;
+}
+
+.title {
+  margin-top: 10px;
+  font-size: 14px;
+  text-shadow: 0 2px 4px #000;
+}
+
+#detail {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#detail.hidden {
+  display: none;
+}
+
+#detailBubble {
+  background: #0a2a5e;
+  padding: 30px;
+  border-radius: 30px;
+  text-align: center;
+  color: white;
+}
+
+#detailBubble img {
+  width: 220px;
+  border-radius: 20px;
+}
+
+#downloadBtn {
+  margin-top: 20px;
+  padding: 12px 25px;
+  font-size: 16px;
+  border-radius: 20px;
+  border: none;
+  background: #00e5ff;
+  font-weight: bold;
+  cursor: pointer;
+}
